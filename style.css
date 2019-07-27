@@ -47,33 +47,53 @@ html, body {height: 100%;}
 .alignright {float:right;margin-left:15px;margin-bottom: 15px}
 .aligncenter {display:block;margin:0 auto 15px}
 a:focus {outline:0px solid}
-img {max-width:100%;height:auto}
+img {max-width:100%;height:auto;margin-bottom:20px;}
 .fix {overflow:hidden}
 p {margin:0 0 15px;}
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 15px;
+  margin-top: 30px;
+  Margin-bottom: 20px;
+  text-align: center;
 }
+h1 { font-size: 1.9em;}
 h2 {
   font-family: "Oswald",sans-serif;
   font-weight: bold;
   line-height: 30px;
 }
-a {transition: all 0.3s ease 0s;text-decoration:none;color:#777}
+a {transition: all 0.3s ease 0s;text-decoration:none;color:#ff0000}
 a:hover {
-  color: #ec4445;
+  color: #ff8f00;
   text-decoration: none;
 }
 a:active, a:hover {
   outline: 0 none;
 }
+	A.dot {
+    text-decoration: none; /* Убираем подчеркивание */
+    border-bottom: 1px dashed #000080; /* Добавляем свою линию */ 
+   }
+	a.dot-b {
+	   font-weight: bold;
+	   text-decoration: none; /* Убираем подчеркивание */
+		border-bottom: 1px dashed #000080; /* Добавляем свою линию */ 
+	   }
+	a.dot-to {
+	   font-weight: bold;
+	   text-decoration: none; /* Убираем подчеркивание */
+		border-bottom: 1px dashed #000080; /* Добавляем свою линию */ }
 ul{
 list-style: outside none none;
 margin: 0;
 padding: 0
 }
+li {
+	margin-bottom:12px;
+}
 body {
 	font-family: "Lora",serif;
-	font-size: 14px;
+	font-size: 18px;
 }
 .clear{clear:both}
 .container{width:1200px;}
@@ -86,7 +106,7 @@ body {
 ------------------------------------- */
 .header-top-area { background: #000000;}
 .mainmenu{}
-.mainmenu ul{}
+.mainmenu ul{height: 60px;}
 .mainmenu ul li {
   display: inline-block;
   margin-right: 40px;
@@ -100,6 +120,7 @@ body {
   font-weight: 700;
   padding: 20px 0;
   text-transform: uppercase;}
+  .mainmenu ul li a.bonus {color:yellow;}
 .mainmenu ul li:hover a{color:#EC4445}
 .mainmenu ul li ul.sub-menu {
   background: #fff none repeat scroll 0 0;
@@ -382,7 +403,6 @@ a.continue-reading {
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 1px;
-  margin-top: 22px;
   padding: 10px 20px;
   transition: all 0.5s ease 0s;}
 a.continue-reading:hover, a.reply:hover, .message-box button.send:hover,.send-comment button.send:hover {color:#fff;background: #EC4445;}
@@ -839,9 +859,12 @@ transform: translate(0px, 0px);}
 .single-categories a img {}
 .single-categories h2, .single-blog-main h2 {
   color: #262626;
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 10px;
-  margin-top: 30px;}
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-transform: uppercase;}
 h4.posted {
   color: #262626;
   font-size: 16px;
@@ -853,7 +876,7 @@ h4.posted a {
 h4.posted a:hover {color: #cf0000;}
 .single-categories h4, .single-blog-main h4 {
   color: #535353;
-  font-size: 14px;
+  font-size: 22px;
   line-height: 20px;}
 p.categories-text {
   color: #343434;
@@ -921,7 +944,8 @@ p.categories-text {
   border-radius: 0;}
 .featured-post .owl-controls .owl-buttons .owl-prev, .latest-comments .owl-controls .owl-buttons .owl-prev {
   right: 30px;}
-.single-featured-post img {  width: 100%;}
+.single-featured-post img {  margin-bottom:0}
+.gallery img {  width: 80%;display: block;margin-left: auto;margin-right: auto;}
 .featured-post .owl-controls .owl-buttons div:hover, .latest-comments .owl-controls .owl-buttons div:hover {background: #ec4445;}
 .post-text {  margin-top: 30px;}
 .post-text h2 {
@@ -1104,7 +1128,7 @@ h2.gallary-title {
 /*==========================
 14. single-blog Page
 =========================*/
-.single-blog-area { margin-top: 85px;}
+.single-blog-area { margin-top: 0px;}
 .single-blog-picture {
   float: left;
   margin-right: 30px;
@@ -1165,15 +1189,15 @@ h2.gallary-title {
   transform: scale(1);
   visibility: visible;}
 .single-blog-main img {}
-.single-blog-main h2 { margin-top: 0;}
+.single-blog-main h2 { margin-top: 30;}
 .single-blog-main h4 {  font-style: italic;}
 .single-blog-main p {
   color: #343434;
   font-size: 18px;
   line-height: 23px;}
-.blog-one-quote { padding: 55px 190px 55px 170px;}
+.blog-one-quote { padding: 55px 190px 55px 0px;}
 .blog-one-quote p {
-  font-size: 16px;
+  font-size: 18px;
   font-style: italic;
   line-height: 21px;
   color: #343434;}
@@ -1252,6 +1276,8 @@ a.reply {
 /*==================================
 15. Single-blog-leftside-bar Page
 ===================================*/
+.categories-tag-list {text-align: center;}
+.categories-tag-list p a.dot-to {color:red; te}
 .categories-tag-list > h2 { margin-bottom: 28px;}
 .categories-tag-list p a {
   color: #262626;

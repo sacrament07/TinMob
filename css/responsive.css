@@ -199,7 +199,9 @@ h2.gallary-title {
 .little-bit h2 {  font-size: 26px;}
 .header-icons, .header-search, .blog-content-right, h4.home-posted {
   display: none;}
-.single-slider-banner.slider-banner-1 img, .single-slider-banner.slider-banner-2 img, .single-categories a img { width: 100%;}
+.single-slider-banner.slider-banner-1 img, .single-slider-banner.slider-banner-2 img, .single-categories a img { width: 50%;}
+.single-featured-post {width: 85%}
+.single-instagram img {width: 65%}
 .slider-banner-1 {
  	margin-top: 27px;}
 .little-bit-area, .single-categories, .top-categories, .categories-area, .single-blog-area, .single-blog-main {
