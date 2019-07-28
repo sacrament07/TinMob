@@ -1,3 +1,2 @@
-RewriteEngine On
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTPS/
-RewriteRule ^index\.html$ https://tinkoff-sim.ru/ [R=301,L]
+RewriteCond %{HTTP:X-HTTPS} !1
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
