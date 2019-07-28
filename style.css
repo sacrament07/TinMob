@@ -120,7 +120,13 @@ body {
   font-weight: 700;
   padding: 20px 0;
   text-transform: uppercase;}
-  .mainmenu ul li a.bonus {color:yellow;}
+.mainmenu ul li a.bonus {color:yellow;
+  display: block;
+  font-size: 14px;
+  font-family: "Oswald",sans-serif;
+  font-weight: 700;
+  padding: 20px 0;
+  text-transform: uppercase;}
 .mainmenu ul li:hover a{color:#EC4445}
 .mainmenu ul li ul.sub-menu {
   background: #fff none repeat scroll 0 0;
