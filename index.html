@@ -1,208 +1,668 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html lang="en-US">
-	<head>
-		<meta http-equiv="refresh" content="10;url=App\Manual\index.html" />
-		<title>PortableApps.com Launcher Help</title>
-		<link rel="alternate" type="application/rss+xml" title="PortableApps.com" href="http://portableapps.com/feeds/general">
-		<link rel="SHORTCUT ICON" href="Other/Help/images/favicon.ico">
-		<style>
-			body {
-				margin: 20px;
-				background: #e6e8ea none repeat scroll 0% 50%;
-				font-family: Verdana,Arial,Helvetica,sans-serif;
-				font-size: 76%;
-				color: #000000;
-				text-align: center;
-			}
-			pre {
-				border: 1px dotted #808080;
-				padding: 10px;
-				background-color: #e6e8ea;
-				-moz-border-radius-topleft: 12px;
-				-moz-border-radius-topright: 12px;
-				-moz-border-radius-bottomright: 12px;
-				-moz-border-radius-bottomleft: 12px;
-			}
-			a {
-				color: #b31616;
-				font-weight: bold;
-			}
-			a:link {
-			}
-			a:visited {
-			}
-			a:active {
-			}
-			a:hover {
-				color: red;
-			}
-			h1, h2, h3, h4, h5, h6 {
-				font-family: Arial,sans-serif;
-				font-weight: bold;
-			}
-			h1 {
-				border-bottom: 1px solid silver;
-				color: #b31616;
-				font-weight: bold;
-				letter-spacing: -2px;
-				font-size: 2.2em;
-				padding-bottom: 5px;
-			}
-			h2 {
-				border-bottom: 1px solid silver;
-				font-size: 1.5em;
-				padding-bottom: 3px;
-				clear: both;
-			}
-			h3 {
-				font-size: 1.2em;
-			}
-			h4 {
-				font-size: 1.1em;
-			}
-			h5 {
-				font-size: 1em;
-			}
-			h6 {
-				font-size: 0.8em;
-			}
-			img {
-				border: none;
-			}
-			ol, ul, li {
-				font-size: 1em;
-			}
-			p, table, tr, td, th {
-				font-size: 1em;
-			}
-			pre {
-				font-size: 1em;
-			}
-			strong, b {
-				font-weight: bold;
-			}
-			table, tr, td {
-				font-size: 1em;
-				border-collapse: collapse;
-			}
-			td, th {
-				border: 1px solid #aaaaaa;
-				padding: 3px;
-				border-collapse: collapse;
-			}
-			th {
-				background: #3667a8 none repeat scroll 0% 50%;
-				color: white;
-			}
-			ol ol {
-				list-style-type: lower-alpha;
-			}
-			.content {
-				border-left: 1px solid Black;
-				border-right: 1px solid Black;
-				padding: 12px 30px;
-				text-align: left;
-				margin-left: auto;
-				margin-right: auto;
-				width: 780px;
-				background-color: #ffffff;
-				line-height: 150%;
-			}
-			.logo {
-				border-left: 1px solid black;
-				border-right: 1px solid black;
-				background: #ffffff url(Other/Help/images/help_background_header.png) repeat-x;
-				width: 840px;
-				margin-top: 20px;
-				margin-left: auto;
-				margin-right: auto;
-				text-align: left;
-			}
-			.footer {
-				border-left: 1px solid black;
-				border-right: 1px solid black;
-				background: #ffffff url(Other/Help/images/help_background_footer.png) repeat-x scroll 0% 50%;
-				width: 840px;
-				height: 16px;
-				margin-left: auto;
-				margin-right: auto;
-				text-align: left;
-			}
-			.logo img {
-				border: none;
-				padding-left: 0px;
-				position: relative;
-				top: -4px;
-			}
-			* html .content {
-				width: 760px;
-			}
-			* html .logo, * html .footer {
-				width: 820px;
-			}
-			.content h1 {
-				margin: 0px;
-			}
-			h1.hastagline {
-				border: none;
-			}
-			h2.tagline {
-				color: #747673;
-				clear: none;
-				margin-top: 0em;
-			}
-			pre, .ini-head, .ini-key, .ini-value {
-				font-family: Courier New,Courier,monospace;
-			}
-			.ini-head, .ini-head:hover {
-				font-weight: bold;
-				color: #b31616;
-			}
-			.ini-key, .ini-key:hover {
-				font-weight: normal;
-				color: #0000c0;
-			}
-			.ini-value, .ini-value:hover {
-				font-weight: normal;
-				color: #008000;
-			}
-			.ini-default {
-				font-weight: bold;
-				text-decoration: underline;
-			}
-			pre a:link, pre a:visited {
-				text-decoration: none;
-			}
-			pre a:link:hover, pre a:visited:hover, pre a:link:active, pre a:visited:active {
-				text-decoration: underline;
-			}
-			@media print {
-				body, .content { margin: 0;
-					padding: 0;
-				}
-				.navigation, .locator, .footer a, .message, .footer-links {
-					display: none;
-				}
-				.footer, .content, .header {
-					border: none;
-				}
-				a {
-					text-decoration: none;
-					font-weight: normal;
-					color: black;
-				}
-			}
-		</style>
-	</head>
-<body>
-<div class="logo"><a href="http://portableapps.com/"><img src="Other/Help/images/help_logo_top.png" alt="PortableApps.com - Your Digital Life, Anywhere" height="47" width="229"></a></div>
-<div class="content">
-<h1 class="hastagline">PortableApps.com Launcher Manual</h1>
-<div class="tagline">
-<h2 class="tagline">your PAL in making portable apps</h2>
-</div>
-<p>This document has been superseded by the new <a href="App/Manual/index.html">Manual</a> (also available <a href="http://portableapps.chrismorgan.info/portableapps/launcher/docs/">online</a>).</p>
-</div>
-<div class="footer"></div>
-</body>
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<!--[if lt IE 7 ]> <html lang="en" class="ie6">    <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7">    <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8">    <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9">    <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Тинькофф Мобайл - Оператор Мобильной Связи: Тарифы, Отзывы, База и Покрытие, Заказ Сим Карты</title>
+        <meta name="description" content="Детали тарифа, активация сим-карты, переход с сохранением номера и бонус 1000р - Вся информация о сотовой связи Тинькова">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- РАЗМЕТКА НАЧАЛО -->
+<meta property="og:locale" content="ru_RU" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Тинькофф Мобайл - Оператор Мобильной Связи: Тарифы, Отзывы, База и Покрытие, Заказ Сим Карты" />
+<meta property="og:description" content="Детали тарифа, активация сим-карты, переход с сохранением номера и бонус 1000р - Вся информация о сотовой связи Тинькова." />
+<meta property="og:url" content="https://tinkoff-sim.ru/index.html" />
+<meta property="og:site_name" content="Тинькофф Сим" />
+<meta property="article:published_time" content="2018-06-13T12:49:07+00:00" />
+<meta property="article:modified_time" content="2019-03-05T15:06:24+00:00" />
+<meta property="og:updated_time" content="2019-03-05T15:06:24+00:00" />
+<meta property="og:image" content="/img/free_calls_slider.jpg" />
+<meta property="og:image:secure_url" content="/img/free_calls_slider.jpg" />
+<meta property="og:image:width" content="889" />
+<meta property="og:image:height" content="500" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Как обычному человеку узнать свой баланс в Тинькофф Мобайл? Проверка происходит короткой командой цифр или через Мобильно приложение на смартфоне." />
+<meta name="twitter:title" content="Баланс Тинькофф.Мобайл: как узнать, проверить, пополнить" />
+<meta name="twitter:image" content="/img/free_calls_slider.jpg" />
+<!-- РАЗМЕТКА КОНЕЦ -->
+        <!-- fonts
+        ============================================ --> 
+        <link href='https://fonts.googleapis.com/css?family=Oswald:700,400' rel='stylesheet' type='text/css'>  
+        <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
+        
+        <!-- Favicon
+        ============================================ -->
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">        
+
+        <!-- CSS  -->
+        
+        <!-- Bootstrap CSS
+		============================================ -->      
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        
+		<!-- owl.carousel CSS
+		============================================ -->      
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        
+		<!-- owl.theme CSS
+		============================================ -->      
+        <link rel="stylesheet" href="css/owl.theme.css">
+           	
+		<!-- owl.transitions CSS
+		============================================ -->      
+        <link rel="stylesheet" href="css/owl.transitions.css">
+        
+		<!-- font-awesome.min CSS
+		============================================ -->      
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        
+ 		<!-- animate CSS
+		============================================ -->         
+        <link rel="stylesheet" href="css/animate.css">
+		
+		<!-- meanmenu.min css
+		============================================ -->      
+        <link rel="stylesheet" href="css/meanmenu.min.css">	
+
+        <!-- Lightbox CSS
+        ============================================ -->
+        <link rel="stylesheet" href="css/lightbox.css">	
+        
+ 		<!-- normalize CSS
+		============================================ -->        
+        <link rel="stylesheet" href="css/normalize.css">
+   
+        <!-- main CSS
+		============================================ -->          
+        <link rel="stylesheet" href="css/main.css">
+        
+        <!-- style CSS
+		============================================ -->          
+        <link rel="stylesheet" href="style.css">
+        
+        <!-- responsive CSS
+		============================================ -->          
+        <link rel="stylesheet" href="css/responsive.css">
+        
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        
+        <!-- Add your site or application content here -->
+
+    <!-- header start -->
+    <header>
+        <!-- header-top-area start -->
+        <div class="header-top-area">
+            <div class="container">
+                <div class="row">
+                    <!-- mainmenu start -->
+                    <div class="col-lg-7 col-md-7">
+                        <div class="mainmenu">
+                            <nav id="dropdown">
+                                <ul>
+                                    <li><a href="#tariffs">Тарифы</a></li>
+									<li><a href="#otzivy">Отзывы</a></li>
+									<li><a href="#akcii">Все Акции</a></li>
+									<li><a href="faq.html">Ответы на вопросы</a></li>
+									<li><a href="https://www.tinkoff.ru/mobile-operator/" class="bonus">1000р за перенос номера</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- mainmenu end -->
+                    <div class="col-lg-5 col-md-5">
+                       <!-- header-icons start -->
+                       
+                       <!-- header-icons end -->
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header-top-area end -->
+       
+    </header>
+    <!-- header end -->
+    <!-- blog-area start -->
+    <div class="blog-area">
+        <!-- single-blog start -->
+     
+        <!-- single-blog end -->
+    </div>
+    <!-- blog-area end --> 
+    <!-- single-blog-area start -->
+    <div class="single-blog-area margin-zero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-8">
+                    <!-- single-blog-main start -->
+                    <div class="single-blog-main">
+                       <!--  <div class="blog-banner">
+                            <a href="#"><img src="img/blog/svyaz.jpg" alt=""></a>
+                        </div>-->
+                        <h1>Тинькофф Мобайл: Стоит ли подключаться? Исследуем тарифы, отзывы и акции</h1>
+						
+                    <!--    <h4 class="posted"><a class="admin" href="#">Tinkoff Boss</a> / <a class="date" href="#">Июль</a>, <a class="year" href="#">2019</a></h4>-->
+					
+						<!--Содержание --->
+						<div class="categories-tag-list margin-top">
+                        <h2>Содержание</h2>
+                        <p><a href="#tariffs" class="dot-b">Тарифы Тинькофф Мобайл</a></p>
+                        <p><a href="#tariffs_moscow_spb" class="dot">Тарифы Москвы и СПБ</a></p>
+                        <p><a href="#tariffs_regions" class="dot">Тарифы в регионах</a></p>
+                        <p><a href="#tariff_besplatno" class="dot">Тариф Базовый "без пакета"</a></p>
+						<p><a href="#tariff_besplatno" class="dot">Тарифы в роуминге</a></p>
+                        <p><a href="#zona" class="dot-b">Зона покрытия</a></p>
+                        <p><a href="#baza" class="dot">На базе какого оператора работает Тинькофф Мобайл?</a></p>
+						<p><a href="#goroda" class="dot">В каких городах работает Тинькофф Мобайл?</a></p>
+						<p><a href="#akcii" class="dot-b">Акции Тинькофф Мобайл</a></p>
+						<p><a href="#1000" class="dot">1000 Рублей за перенос от другого оператора</a></p>
+						<p><a href="#mes" class="dot">Первый месяц бесплатно</a></p>
+						<p><a href="#besplatno" class="dot">Звонки бесплатно, если вы клиент банка!</a></p>	
+						<p><a href="#otzivy" class="dot-b">Отзывы о Тинькофф Мобайл</a></p>
+						<p><a href="#pol" class="dot">Положительные отзывы</a></p>
+						<p><a href="#otr" class="dot">Отрицательные отзывы</a></p>
+						<p><a href="#opyt" class="dot">Мой отзыв о Тинькофф Мобайл / Личный опыт</a></p>
+                        <p><a href="#app" class="dot-b">Приложения для смартфона</a></p>
+                        <p><a href="https://www.tinkoff.ru/mobile-operator/" class="dot-to">Заказать сим карту Тинькофф Мобайл</a></p>
+						
+                    </div>
+					<!--Содержание --->
+                        <p>Тинькофф запустил своего мобильного оператора в конце 2017 года. До большинства городов новости о запуске добираются только сейчас. Да и фактический запуск во многих городах произошел совсем недавно.</p>
+                        <p>Тинькофф известен своей агрессивной и широкой экспансией. Мобильный рынок не стал исключением: компания предлагает лучшие условия по тарифу и бонус 1000 рублей за перенос номера от другого оператора. </p>
+						<h2 id=tariffs>Тинькофф Мобайл: Тарифы</h2>
+						<p><b>Тарифов в обычном понимании у Тинькова нет.</b></p> 
+						<p>Стоимость вашего тарифа будет зависеть от того набора услуг, которые вы подключите. Цена также зависит от вашего региона проживания. Так как стоимость услуг может изменяться со временем то рекомендую узнать стоимость тарифа лично для вас на сайте Тинькофф Мобайл.</p>
+						<p>В моем случае окно выбора тарифа выглядит так:</p>
+						<img src="img/vybor_tarrifa.jpg" alt="">
+						<p><ol>Однако несмотря на формальное отсутствие тарифов я решил для наглядности выделить 3 тарифных группы:</ol></p> 
+						<li>Тарифы для Москвы и Санкт-Петербурга</li>
+						<li>Тарифы для регионов</li>
+						<li>Базовый тариф (без пакета услуг)</li></ol>
+		<div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Обновление 19.07.2019</h3>
+            </div>
+            <div class="panel-body">
+              <p>Я нашел на сайте Тинькова документ с подробным описанием стоимости разных пакетов  услуг в разных регионах:<a href="http://static.tcsbank.ru/news/2019/15072019-mobile-tariff.pdf"> Подробные тарифы в PDF</a><p>
+            </div>
+          </div>
+						<h3 id=tariffs_moscow_spb>Тарифы для Москвы и Санкт-Петербурга</h3>
+						<!--table of moscow tarrifs -->
+						<table border="1" width="99%" cellspacing="0" cellpadding="4"> <caption>Таблица тарифов оператора Тинькофф Мобайл для Москвы и Санкт-Петербурга</caption> <tbody> <tr> <td style="text-align: left;" bgcolor="#FFFF00"></td> <td align="center" bgcolor="#D3D3D3"><strong>Без интернета</strong></td> <td align="center" bgcolor="#D3D3D3"><strong>2 Гб.</strong></td> <td align="center" bgcolor="#D3D3D3"><strong>5 Гб.</strong></td> <td align="center" bgcolor="#D3D3D3"><strong>10 Гб.</strong></td> <td align="center" bgcolor="#D3D3D3"><strong>20 Гб.</strong></td> <td align="center" bgcolor="#D3D3D3"><strong>Безлимит</strong></td> </tr> <tr> <td bgcolor="#D3D3D3"><strong>Без звонков</strong></td> <td align="center">Без пакета</td> <td align="center">199 руб.</td> <td align="center">269 руб.</td> <td align="center">389 руб.</td> <td align="center">449 руб.</td> <td align="center">999 руб.</td> </tr> <tr> <td bgcolor="#D3D3D3"><strong>200 минут</strong></td> <td align="center">99 руб.</td> <td align="center">298 руб.</td> <td align="center">368 руб.</td> <td align="center">488 руб.</td> <td align="center">548 руб.</td> <td align="center">1 098 руб.</td> </tr> <tr> <td bgcolor="#D3D3D3"><strong>400 минут</strong></td> <td align="center">139 руб.</td> <td align="center">338 руб.</td> <td align="center">408 руб.</td> <td align="center">528 руб.</td> <td align="center">588 руб.</td> <td align="center">1 138 руб.</td> </tr> <tr> <td bgcolor="#D3D3D3"><strong>600 минут</strong></td> <td align="center">199 руб.</td> <td align="center">398 руб.</td> <td align="center">468 руб.</td> <td align="center">588 руб.</td> <td align="center">648 руб.</td> <td align="center">1 198 руб.</td> </tr> <tr> <td bgcolor="#D3D3D3"><strong>1 200 минут</strong></td> <td align="center">359 руб.</td> <td align="center">558 руб.</td> <td align="center">628 руб.</td> <td align="center">748 руб.</td> <td align="center">808 руб.</td> <td align="center">1 358 руб.</td> </tr> <tr> <td bgcolor="#D3D3D3"><strong>Безлимитные звонки</strong></td> <td align="center">999 руб.</td> <td align="center">1 198 руб.</td> <td align="center">1268 руб.</td> <td align="center">1 388 руб.</td> <td align="center">1 448 руб.</td> <td align="center">1 998 руб.</td> </tr> </tbody> </table>
+						<!--end of moscow table -->
+						<br><p>Скромный пакет из 200 минут и 2гб интернета обойдется в 298 рублей. Пакет из тех же 200 минут и 5 гб - 368 рублей.</p>
+						<p>Стандартный пакет из 5гб интернет трафика и 400 минут обойдется в 408 рублей. 10 гб трафика с тем же 400 минутным пакетом обойдется уже в 528 рублей. У конкурентов тарифы сравнимые.</p>
+						<p>Выгодными выглядят отдельные пакеты минут. Например <b>600 минут за 200 рублей в месяц</b>. У конкурентов подобных не видел. Также интересное предложение - полный безлимит связи за 999 рублей.</p>
+						<p>О своем интернете Тинькофф говорит как о "действительно безлимитном". Отсутствие ограничений и кавычек в слове "безлимитный" действительно могло бы сделать пользователей более лояльными к продукту.</p>
+						<h3 id=tariffs_regions>Тарифы для регионов России</h3>
+						<div class="col-lg-3 col-md-3 col-sm-3">
+						<p>Тарифы на пакет звонков в регионах</p></div>
+						<img src="img/tariff_region_svyaz.jpg" alt="Подпись">
+						<br><br>
+						<div class="col-lg-3 col-md-3 col-sm-3">
+						<p>Тарифы на пакет интернета в регионах</p></div>
+						<img src="img/tariff_region_internet.jpg" alt="">
+						<p><b>Стоимость тарифов может изменяться по желанию Тинькова в любой момент.</b> Цена также зависят от региона и выбранных дополнительных опций. </p>
+						<p>В регионах цены на услуги выглядят пониже. Отдельный пакет связи из 200 минут обойдется всего в 79 рублей. Идеальное решение для тех, кто не пользуется интернетом с телефона или смартфонов с 2 сим, где интернет от другого оператора.</p>
+						<p>Пакет 400 минут + 4 гб трафика = 258 рублей. При увеличении пакетов цена становится выше: например <b>600 минут + 8 гб = 358 рублей</b>, что все еще является крайне интересным предложением на рынке.</p> 
+						<div class="well">Рекомендую проверять актуальную стоимость тарифов на официальном сайте. Сам Тинькофф заявляет что возможны 1100 комбинаций в их конструкторе тарифов!</div>
+        <p>Что будет если пакет минут в тарифе закончится? - За каждые 100 минут сверх пакета будет списываться 99 рублей.</p>
+						<div>
+						<ul><p>В качестве опций к тарифам предлагаются: </p>
+                            <li><p><span><i class="fa fa-commenting"></i></span> Безлимит смс сообщений - 49 рублей </p></li>
+                            <li><p><span><i class="fa fa-whatsapp"></i></span> Безлимит на мессенджеры: WhatsApp, Viber, Facebook Messenger, iMessage, Tam Tam, imo.im - 59 рублей </p></li>
+                            <li><p><span><i class="fa fa-vk"></i></span> Безлимит на использование социальных сетей: ВКонтакте, Facebook, Одноклассники, Instagram, IGTV, Snapchat, Twitter, Tinder - 59 рублей </p></li>
+							<li><p><span><i class="fa fa-music"></i></span> Безлимит на прослушивание музыки (Подписка на сервисы в стоимость не входит): Apple Music, Яндекс.Музыка, Яндекс.Радио, Google Play Music, Soundcloud, Boom, Zvooq, Deezer Music, Shazam, Spotify - 59 рублей </p></li>
+							<li><p><span><i class="fa fa-file-video-o"></i></span> Безлимит на просмотр видео: Youtube, Twitch, iTunes Видео, Google Play Фильмы, YouTube Детям, Rutube, Vimeo - 159 рублей</p></li></ul></div>
+				<h3 id=tariff_besplatno>Базовый тариф - тариф без подключения пакета</h3>
+							<p>Есть возможность оформить сим карту тинькофф мобайл с базовым тарифом без абонентской платы. Данный тариф будет удобен если вам не нужен пакет связи и интернета, вы пользуетесь услугами лишь эпизодически. Либо как вариант, вы пользуетесь только соц сетями и платите только за одну услугу, вместо целого набора.</p>
+							<blockquote>Стоимость вызовов на базовом тарифе (без пакета) при звонках внутри сети на Тинькофф - 0 рублей. Стоимость других вызовов (кроме роуминга) составляет 2,9 руб/мин. Стоимость одной смс - 2,9 руб</blockquote>
+							<p class=bold>Входящие вызовы внутри страны на всех тарифах бесплатны.</p>
+							<h3> Тарифы в роуминге </h3>
+							<b><p>Международные звонки по Европе оплачиваются по тарифу 11,9 рублей за минуту.</b> Интернет в Европе будет стоить - 100 МБ на день за 149 ₽.</p>
+							<b><p>Международные звонки в остальных странах оплачиваются по тарифу 19,9 рублей за минуту.</b> Пакет интернета — 100 МБ за 299 ₽</p>
+							<img src="img/rouming.jpg" alt="Условия роуминга в Тинькофф Мобайл">	
+							<p>Но самое крутое на мой взгляд в международных тарифах тинькова это <b>Безлимитные мессенджеры</b> со стоимостью от 49 рублей в день. Итак, целыми днями можно общаться даже в роуминге в WhatsApp, Viber, Facebook Messenger, iMessage, ТамТам и IMO.IM.</p>
+							<p>Приложения самого тинькова будут работать бесплатно, даже если у вас нет пакета интернета. Это может быть действительно удобно, когда надо совершить платеж или проверить остаток на счете, а интернет в роуминге стоит довольно дорого.</p>
+							<p>Отдельно отмечу, что тинькофф автоматически отключает фоновые обновления приложений в роуминге. Сделано это для экономии трафика - через магазины Гугла и Эпла(Google play, Apple Store) <b>приложения обновляться не будут</b> (в роуминге). Также по умлочанию отключается синхронизация облачных сервисов (iCloud, Google Drive и Dropbox).</p>
+				<h2 id=zona>Зона покрытия Тинькофф Мобайл</h2>
+							<p>Зона покрытия Тинькофф Мобайл на карте (кликните, чтобы увидеть в полный размер):</p>
+							<a href="img/zona.jpg" data-lightbox="roadtrip"><img src="img/zona.jpg" alt="Зона покрытия Тинькофф Мобайл на карте"></a>
+							<p>
+							<h3 id=baza>На базе какого оператора работает Тинькофф Мобайл</h3>
+							<p>Тинькофф Мобайл работает на радиочастотах Tele2. Однако есть регионы, где Tele2 не представлен, там Тинькофф работает на базе Мегафона. В Крыму и Севастополе оператор работает на базе "Волна Мобайл".</p>
+							<p>Тинькофф имеет свой собственный диапазон номеров для сети. По факту Тинькофф Мобайл является <b>"виртуальным"</b> мобильным оператором, собственных вышек он пока не имеет. Зато имеет глубокую интеграцию с продуктами самого банка Тинькова.</p>
+							<h4>Частоты Тинькофф Мобайл</h4>
+							<p>В Москве и Московской области работа возможно только в сетях 3G и 4G (LTE). К слову 4G работает даже в метро. К сожалению сеть 2G в Москве и области не поддерживается.</p>
+							<p><b>Частоты 4G LTE: 800, 1800 и 2600мгц.</b></p>
+							<h3 id=goroda>В каких городах работает Тинькофф Мобайл</h3>
+							<blockquote>На сегодняшний день бренд Тинькофф Мобайл представлен в 53 регионах России: Москве, Санкт-Петербурге, Архангельской, Белгородской, Брянской, Владимирской, Волгоградской, Вологодской, Воронежской, Иркутской, Калининградской, Калужской, Кемеровской, Кировской, Костромской, Курганской, Ленинградской, Липецкой, Магаданской, Московской, Мурманской, Новгородской, Новосибирской, Омской, Оренбургской, Орловской, Пензенской, Псковской, Самарской, Саратовской, Сахалинской, Смоленской, Тамбовской, Тверской, Тульской, Томской, Тюменской областях, республиках Адыгея, Карелия, Коми, Марий Эл, Мордовия, Татарстан, Тыва и Хакасия, Удмуртской Республике, Алтайском, Камчатском, Краснодарском, Красноярском и Пермском краях, Ханты-Мансийском и  Ямало-Ненецком автономных округах.</blockquote>
+							<p>В моем случае города не было в списке поддерживаемых (Чебоксары), однако в службе поддержки я выяснил что <b>возможность подключения есть</b>. Как я понял здесь роль играют 2 фактора:
+							<ol>
+							<li>Соответствует ли местность зоне покрытия Тинькофф Мобайл</li>
+							<li>Есть ли курьеры Тинькофф в данной области</li></ol>
+							<p>Если вашего города нет в списке, но вы хотите подключиться, можно попробовать уточнить возможность подключения в поддержке. К тому же покрытие постоянно увеличивается.</p>
+			<h2 id=akcii>Акции в Тинькофф Мобайл</h2>
+					<h3 id=1000>Акция 1000 Рублей за перенос от другого оператора</h3>
+					<p class="red">Акция только до 31 июля 2019 года.</p>
+					<p>Условия акции просты: переходите на Тинькофф Мобайл с сохранением номера и 1000 рублей будут зачислены на ваш телефонный счет. Бонус будет зачислен в тот же день, когда и активирована сим-карта.</p>
+					<p>Важно: бонусные 1000 рублей начисляются на срок 90 дней. Если на счет были зачислены собственные средства, то тратится будут в первую очередь бонусные.</p>
+					<p>Данная акция не исключает действие акции <a href="#mes">"Первый месяц бесплатно"</a></p>
+<h3 id=mes>Акция Первый месяц бесплатно</h3>
+<p>Тинькофф Мобайл дарит в первый месяц обслуживания <b>600 минут, 20-30 гигабайт трафика, безлимитные смс</b> + безлимитный доступ к некоторым сервисам и приложениям.</p>
+<p>Не многие операторы позволяют протестировать качество связи и сервиса перед оплатой. Чаще всего мы оплачиваем новую симку еще в салоне сотовой связи.</p>
+<p>Тариф, которым вы будете пользоваться можно выбрать как сразу при подключении, так и в течение первого бесплатного месяца. По задумке вы можете не только протестировать качество сервиса, но и оценить сколько минут и гигабайт трафика вам необходимо.</p>
+<p>Данная акция не исключает акцию <a href="#1000">1000р на счет за перенос номера"</a>. Скорее они друг друга взаимно дополняют. Благодаря этому вы получаете бесплатный месяц обслуживания + 1000р за перенос своего номера к Тинькофф Мобайл. Бесплатный пакет услуг в пробный месяц активируется автоматически при подключении.</p>
+				<h3 id=besplatno>Акция Звонки бесплатно, если вы клиент банка</h3>
+							<p>До 3 сентября 2019 года клиенты Тинькофф Банка имеют возможность воспользоваться акцией <b>"Бесплатные минуты клиентам банка"</b>. По условиям акции каждый месяц будут начисляться бесплатные минуты на услуги связи.<p>
+							<ol>
+							<li>Шаг один: Оформляем сим-карту Тинькофф Мобайл</li>
+							<li>Шаг два: Привязываем свою банковскую карту Тинькова к полученной симке в <a href=#app>приложении</a> или в <a href="https://www.tinkoff.ru/mobile-operator/">личном кабинете Тинькофф Мобайла</a></li>
+							<li>Шаг три: Там же настраиваем автоплатеж на услуги Тинькофф Мобайл на любую сумму (хоть на 10 рублей)</li></ol>
+							<p>Для получения бонусных минут необходимо тратить по карте 10000р в месяц. Бесплатные минуты будут зачислены в момент активации следующего пакета. Количество минут, которые можно получить по акции равно 600 (впрочем по желанию можно получать и 200-400). <p>Таким образом, <b>при ежемесячных тратах по карте тинькова более 10000 рублей</b> смело заказывайте операторскую сим карту - для вас <b>пакет из 600 минут будет абсолютно бесплатным</b> в течение года.</p></p>
+							</p>Акция действует во всех регионах присутствия.</p>
+							<p>Акции "удовение первого платежа" и "удвоение трафика" закончились</p>
+							
+							
+			<h2 id=otzivy>Отзывы о Тинькофф Мобайл</h2>
+							<p>В 2019 году уже накопилась критическая масса отзывов клиентов о Tinkoff Mobile и можно сделать определенные выводы. Отзывы о сервисе и качестве связи делятся на диаметрально противоположные. Впрочем это касается всех продуктов Тинькова. Давайте выясним какие плюсы и минусы видят клиенты и какие отзывы оставляют на сайтах.</p>
+			<blockquote>"Да они все, блогеры, за бабки маму родную продадут"<footer> Олег Тиньков.</footer><br>"Да я вообще один из самых первых блогеров в России!"<footer> Олег Тиньков.</footer></blockquote>
+							<p>Множество отзывов относятся не конкретно к продукту, а к личности Тинькова. Я бы даже сказал большинство. Их рассматривать хоть и весело, но практического смысла не имеет. Давайте лучше рассмотрим отзывы непосредственно о сим карте Тинькофф Мобайл.</p>
+		<h3 id="pol">Положительные отзывы о Тинькофф Мобайл</h3>		
+							<p>По итогам 2018 года Тинькофф Мобайл был признан победителем «Народного <a href="https://www.banki.ru/telecom/responses/">рейтинга</a> операторов связи» портала Банки.ру.</p>
+							<p>Похоже что и в 2019 году Тинькофф выиграет народное голосование, безоговорочное лидерство с очень большим отрывом.</p>
+							<img src="img/rating.jpg" alt="Тиькофф Мобайл - лидер народного рейтинга мобильных операторов">		
+							<br><br><p>Наиболее типовые и показательные положительные отзывы клиентов Тинькофф Мобайл:</p>
+											   <div class="featured-post-curosel">
+                                <div class="gallery">
+                                    <img src="img/otzyv1.jpg" alt="Сложность активации сим-карты Тинькофф Мобайл">
+                                    <div class="post-text fix">
+                                        <p>Клиенты довольные доставкой, бонусами и возможностью перенести свой номер. Вообще акции Тинькова работают удачно и создают большой пласт лояльных пользователей.</p>
+                                    </div>
+                                </div>
+                                 <div class="gallery">
+                                    <img src="img/otzyv2.jpg" alt="Развернутый положительный отзыв о Тинькофф Мобайл">
+                                    <div class="post-text fix">
+                                        <p>Показательный отзыв с перечислением плюсов работы Тинькова</p>
+                                    </div>
+                                </div>
+                                 <div class="gallery">
+                                    <img src="img/otzyv3.jpg" alt="Жалоба на качество услуги связи Тинькофф Мобайл">
+                                    <div class="post-text fix">
+                                        <p>Клиенты в основном довольны условиями связи в роуминге</p>
+                                    </div>
+                                </div>
+								 <div class="gallery">
+                                    <img src="img/otzyv4.jpg" alt="Вероятно заказные положительные отзывы о Тинькофф Мобайл">
+                                    <div class="post-text fix">
+                                        <p>Есть также подозрительно односторонние позитивные отзывы про Тинькофф Мобайл</p>
+                                    </div>
+                                </div>
+                           
+                        </div>
+							<ul class="categories-tags"><p><b>Резюмируя найденное в сети можно выявить следующие плюсы мобильного оператора:</b></p>
+							<li><span><i class="fa fa-thumbs-o-up"></i></span> Людям нравится, когда сим-карту приносят прямо домой.</li>
+							
+							<li><span><i class="fa fa-thumbs-o-up"></i></span> Много отзывов что благодаря конструктору тарифов получилось сэкономить на услугах связи</li>
+							<li><span><i class="fa fa-thumbs-o-up"></i></span> Условия по роумингу привлекли многих клиентов и они им довольны.</li>
+							<li><span><i class="fa fa-thumbs-o-up"></i></span> Не подключают платных подписок</li>
+							<li><span><i class="fa fa-thumbs-o-up"></i></span> Ловит в метро!</li>
+							<li><span><i class="fa fa-thumbs-o-up"></i></span> <a href="akcii">Акции</a> Тинькова также завлекают многих клиентов и добавляют лояльности пользователей</li></ul>
+		<h3 id="otr">Отрицательные отзывы клиентов Тинькофф Мобайл</h3>
+		<p>Самые показательные отрицательные отзывы клиентов Тинькофф Мобайл:</p>
+		   <div class="featured-post-curosel">
+                                <div class="gallery">
+                                    <img src="img/otzyv_1.jpg" alt="Сложность активации сим-карты Тинькофф Мобайл">
+                                    <div class="post-text fix">
+                                        <p>Жалобы клиентов на сложность активации сим-карты</p>
+                                    </div>
+                                </div>
+                                 <div class="gallery">
+                                    <img src="img/otzyv_2.jpg" alt="Плохая работа службы поддержки Тинькофф Мобайл">
+                                    <div class="post-text fix">
+                                        <p>Служба поддержки "морозится" и не дает прямых ответов</p>
+                                    </div>
+                                </div>
+                                 <div class="gallery">
+                                    <img src="img/otzyv_3.jpg" alt="Жалоба на качество услуги связи Тинькофф Мобайл">
+                                    <div class="post-text fix">
+                                        <p>Жалобы на качество услуги связи</p>
+                                    </div>
+                                </div>
+								 <div class="gallery">
+                                    <img src="img/otzyv_4.jpg" alt="Жалоба на скорость интернета Тинькофф Мобайл">
+                                    <div class="post-text fix">
+                                        <p>Типовой отзыв о скорости интернета</p>
+                                    </div>
+                                </div>
+                           
+                        </div>
+						<br><p><b>Резюмируя весь негатив можно выделить главные аспекты недовольства клиентов:</b></p>
+							<ul>
+							<li><span><i class="fa fa-minus"></i></span> Некомпетентность сотрудников службы поддержки. Каждому новому звену поддержки приходится объяснять все заново. Ответы в большинстве случаев заготовленные и особой смысловой нагрузки не несут</li>
+							
+							<li><span><i class="fa fa-minus"></i></span> Безлимитный интернет все таки не совсем безлимитный, несмотря на маркетинговые лозунги. Есть показательные отзывы с замерами, доказывающие что скорость все таки режут. Однако после какого объема трафика и почему снижается скорость доподлинно неизвестно. Также существуют "ограничения" на файлообменные ресурсы. Подобные ограничения крайне радражают пользователей
+							</li>
+							<li><span><i class="fa fa-minus"></i></span> Многие жалуются на сложность активации сим-карты. В частности некоторые модели смартфонов не видят сим-карту и отказываются работать без <a href="#app">приложения Тинькофф Мобайл</a>. Если у вас сложности с акивацией прочитайте заметку <a href="faq.html#activ">как активировать сим-карту</a>.
+							
+			<h3 id=opyt>Личный опыт пользования Тинькофф Мобайл</h3>
+						<ul><p>Дополнительно коротку изложу свою версию преимуществ и недостатков Тинькофф Мобайл.</p>
+						<p><b>Преимущества:</p></b>
+<li><span><i class="fa fa-thumbs-o-up"></i></span> Привозят непосредственно к вам домой</li>
+<li><span><i class="fa fa-thumbs-o-up"></i></span> Нет роуминга на территории России (кроме Крыма и Севастополя)</li>
+<li><span><i class="fa fa-thumbs-o-up"></i></span> Виртуальный номер (иметь 2 номера на одной сим-карте это действительно удобно)</li>
+<li><span><i class="fa fa-thumbs-o-up"></i></span> Если вы и так пользуетесь картой Тинькова, то связь может быть бесплатной</li>
+<li><span><i class="fa fa-thumbs-o-up"></i></span> Интересные опции в роуминге и для тех, кто сидит только в соцсетях</li>
+<li><span><i class="fa fa-thumbs-o-up"></i></span> У интернета нет искусственных ограничений вроде "в модем не вставлять"</li>
+<br><p><b>Недостатки:</p></b>
+<li><span><i class="fa fa-thumbs-o-down"></i></span> Где-то должен быть подвох, это же Тинькофф?!</li>
+<li><span><i class="fa fa-thumbs-o-down"></i></span> Некоторые сервисы могут быть "сырыми". Например на момент написания статьи напрочь отсутствует переадресация</li>
+<li><span><i class="fa fa-thumbs-o-down"></i></span> Поддерживаю жалобы на срезание скорости. Декларировать честный безлимит "без звездочек" и все равно срезать скорость. Это не по нашему. Справедливости ради, ограничения возможно меньше, чем у остальных. Но они есть.</li></ul>	
+						  <!-- ПРИЛОЖЕНИЯ СТАРТ -->
+                    <div class="categories-area dsktop tab-margn">
+					<h2 id=app>Приложения для смартфонов от Тинькофф</h2>
+                        <div class="row">
+                            <h3>Приложение Тинькофф Мобайл (для мобильного ОПЕРАТОРА)</h3>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <!-- single-categories start -->
+                                <div class="single-categories  blog-categories">
+                                    <div class="categories-picture">
+                                        <a href="https://play.google.com/store/apps/details?id=ru.tinkoff.mvno"><img src="img/android-app.webp" alt=""></a>
+                                    </div>
+                                    <h4>Тинькофф Мобайл для Андроид</h4>
+                                    <p class="categories-text">Бесплатно скачать и установить приложение оператора "Тинькофф Мобайл" для смартфонов под управлением Android</p>
+                                    <a class="continue-reading" href="https://play.google.com/store/apps/details?id=ru.tinkoff.mvno">СКАЧАТЬ ИЗ GOOGLE PLAY</a>
+                                </div>
+                                <!-- single-categories end -->
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <!-- single-categories start -->
+                                <div class="single-categories blog-categories">
+                                    <div class="categories-picture">
+                                        <a href="https://itunes.apple.com/ru/app/tinkoff-mobile/id1255182214"><img src="img/iphone-app.webp" alt=""></a>
+                                    </div>
+                                    <h4 id="ios_app">Тинькофф Мобайл для Айфона</h4>
+                                    <p class="categories-text">Бесплатно скачать и установить приложение оператора "Тинькофф Мобайл" для смартфонов под управлением ios.</p>
+                                    <a class="continue-reading" href="https://itunes.apple.com/ru/app/tinkoff-mobile/id1255182214">СКАЧАТЬ ИЗ APP STORE</a>                
+                                </div>
+                                <!-- single-categories end -->
+                            </div>
+                        </div> 
+<!--приложения для тинькофф банка старт --->
+<div class="row"><br>
+                            <h3>Тинькофф Банк (для мобильного БАНКА)</h3>
+                            <div class="col-lg-4 col-md-6 col-sm-4">
+                                <!-- single-categories start -->
+                                <div class="single-categories  blog-categories">
+                                    <div class="categories-picture">
+                                        <a href="https://play.google.com/store/apps/details?id=com.idamob.tinkoff.android"><img src="img/android-bank-app.jpg" alt=""></a>
+                                    </div>
+                                    <h4>Тинькофф Мобильный Банк для Андроид</h4>
+                                    <p class="categories-text">Бесплатно скачать и установить приложение Тинькофф Банк на смартфон под управлением андроид</p>
+                                    <a class="continue-reading" href="https://play.google.com/store/apps/details?id=com.idamob.tinkoff.android">СКАЧАТЬ ИЗ GOOGLE PLAY</a>
+                                </div>
+                                <!-- single-categories end -->
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-4">
+                                <!-- single-categories start -->
+                                <div class="single-categories blog-categories">
+                                    <div class="categories-picture">
+                                        <a href="https://apps.apple.com/ru/app/тинькофф/id455652438"><img src="img/iphone-bank-app.jpg" alt=""></a>
+                                    </div>
+                                    <h4>Тинькофф Мобильный Банк для Айфона</h4>
+                                    <p class="categories-text">Бесплатно скачать и установить приложение мобильный банк Тинькофф на айфон под управлением ios</p>
+                                    <a class="continue-reading" href="https://apps.apple.com/ru/app/тинькофф/id455652438">СКАЧАТЬ ИЗ APP STORE</a>                
+                                </div>
+                                <!-- single-categories end -->
+                            </div>
+							 <div class="col-lg-4 col-md-6 col-sm-4">
+                                <!-- single-categories start -->
+                                <div class="single-categories blog-categories">
+                                    <div class="categories-picture">
+                                        <a href="https://www.microsoft.com/ru-ru/p/%D0%A2%D0%B8%D0%BD%D1%8C%D0%BA%D0%BE%D1%84%D1%84/9wzdncrdjsbr?activetab=overview"><img src="img/windows-app.png" alt=""></a>
+                                    </div>
+                                    <h4>Приложение Тинькофф Банк для ПК (Widnows)</h4>
+                                    <p class="categories-text">Бесплатно скачать и установить приложение Тинькофф мобильный Банк на компьютер или ноутбук</p>
+                                    <a class="continue-reading" href="https://www.microsoft.com/ru-ru/p/%D0%A2%D0%B8%D0%BD%D1%8C%D0%BA%D0%BE%D1%84%D1%84/9wzdncrdjsbr?activetab=overview">MICROSOFT STORE</a>                
+                                </div>
+                                <!-- single-categories end -->
+                            </div>
+                        </div>   
+<br>						
+<!-- приложения для тинькофф банка конец --->						
+                    </div>
+                    <!-- ПРИЛОЖЕНИЯ КОНЕЦ -->
+                    </div>
+                    <!-- single-blog-main end -->
+                    
+                  
+                </div>
+	<!-- featured-post start -->
+        <div class="col-lg-4 col-md-4 col-sm-4">                <div class="featured-post">
+                            <h2>БОНУСЫ!</h2>
+							
+                            <div class="featured-post-curosel">
+							<div class="single-featured-post">
+                                    <a href="https://www.tinkoff.ru/mobile-operator/" target="#"><img src="img/free_calls_slider.jpg" alt=""></a>
+                                    <div class="post-text fix">
+                                        <h2 class="sidebar-post-title">БЕСПЛАТНЫЕ ЗВОНКИ</h2>
+                                        <p>Клиентам банка Тинькофф связь - бесплатно! Получите 600 минут каждый месяц в течение целого года. </p>
+                                        <a href="">Узнать больше <span><i class="fa fa-chevron-right"></i></span></a>
+                                    </div>
+                                </div>
+                                <div class="single-featured-post">
+                                    <a href="https://www.tinkoff.ru/mobile-operator/" target="#"><img src="img/2sim_slider.gif" alt=""></a>
+                                    <div class="post-text fix">
+                                        <h2 class="sidebar-post-title">ВИРТУАЛЬНАЯ СИМ-КАРТА</h2>
+                                        <p>Два номера на одной сим-карте. Когда не хотите раскрывать основной. Не платите за две сим-карты </p>
+                                        <a href="">Узнать больше <span><i class="fa fa-chevron-right"></i></span></a>
+                                    </div>
+                                </div>
+                                <div class="single-featured-post">
+                                    <a href="https://www.tinkoff.ru/mobile-operator/" target="#"><img src="img/first_month.jpg" alt=""></a>
+                                    <div class="post-text fix">
+                                        <h2 class="sidebar-post-title">БЕСПЛАТНО В ПЕРВЫЙ МЕСЯЦ</h2>
+                                        <p>600 минут, 30 гигабайт, безлимитные смс + соцсети. Все бесплатно в первый месяц</p>
+                                        <a href="">Узнать больше <span><i class="fa fa-chevron-right"></i></span></a>
+                                    </div>
+                                </div>
+								 <div class="single-featured-post">
+                                    <a href="https://www.tinkoff.ru/mobile-operator/" target="#"><img src="img/1000r_slider.jpg" alt=""></a>
+                                    <div class="post-text fix">
+                                        <h2 class="sidebar-post-title">1000 Рублей за перенос номера</h2>
+                                        <p>Бонусные 1000 рублей за перенос своего номера к Тинькофф Мобайл от другого оператора</p>
+                                        <a href="">Узнать больше <span><i class="fa fa-chevron-right"></i></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div></div>
+                        <!-- featured-post end -->			
+			
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="categories-tag-list">
+                        <h2>Полезное</h2>
+                        <p>Проверка баланса <span> *100#</span></p>
+						<p>Проверка остатка пакетов <span> *100#</span></p>
+                        <p>Телефон горячей линии <span> тел. 955</span></p>
+                        <p>Горячая линия для звонков<br>из-за границы<span>+7 499 649-59-95</span></p>
+                        <p><a href="#app">Приложение Android <span> Скачать</span></a></p>
+                        <p><a href="#app">Приложение Iphone <span> Скачать</span></a></p>
+                    </div>
+                    <!-- categories-left-sidebar start -->
+					
+                    <div class="categories-left-sidebar">
+
+                        <!-- latest-post start -->
+                        <div class="latest-post  single-blog-top">
+                            <h2>ПОПУЛЯРНЫЕ ВОПРОСЫ</h2>
+                            <!-- single-latest-post start -->
+                            <div class="single-latest-post fix">
+                                <div class="latest-picture floatleft">
+                                    <a href="#" target="#"><img src="img/widget_activation.jpg" alt=""></a>
+                                </div>
+                                <div class="latest-text floatleft">
+                                    <h2 class="sidebar-post-title">АКТИВАЦИЯ</h2>
+                                    <p>Как активировать сим-карту</p>
+                                    <a class="read-more" href="">Читать <span><i class="fa fa-chevron-right"></i></span></a>
+                                </div>
+                            </div>
+                            <!-- single-latest-post end -->
+                            <!-- single-latest-post start -->
+                            <div class="single-latest-post fix">
+                                <div class="latest-picture floatleft">
+                                    <a href="#" target="#"><img src="img/widget_number.jpg" alt=""></a>
+                                </div>
+                                <div class="latest-text floatleft">
+                                    <h2 class="sidebar-post-title">УЗНАТЬ НОМЕР</h2>
+                                    <p>Как узнать свой номер телефона</p>
+                                    <a class="read-more" href="">Читать <span><i class="fa fa-chevron-right"></i></span></a>
+                                </div>
+                            </div>
+                            <!-- single-latest-post end --> 
+                            <!-- single-latest-post start -->
+                            <div class="single-latest-post fix">
+                                <div class="latest-picture floatleft">
+                                    <a href="#" target="#"><img src="img/widget_block.png" alt=""></a>
+                                </div>
+                                <div class="latest-text floatleft">
+                                    <h2 class="sidebar-post-title">ЗАБЛОКИРОВАТЬ</h2>
+                                    <p>Как заблокировать сим-карту</p>
+                                    <a class="read-more" href="">Читать <span><i class="fa fa-chevron-right"></i></span></a>
+                                </div>
+                            </div>
+                            <!-- single-latest-post end -->            
+                        </div>
+                        <!-- latest-post end -->
+                        <!-- latest-riviews start -->
+                        <div class="latest-riviews">
+                            <h2>Оценка клиентов</h2>
+                            <p>
+                                Качество связи
+                                <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star riview-mark"></i></span>
+                            </p>
+                            <p>
+                                Стоимость тарифов
+                                <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                            </p>
+                            <p>
+                                Отсутствие подписок
+                                <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                            </p>
+                            <p>
+                                Распространенность
+                                <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star riview-mark"></i><i class="fa fa-star riview-mark"></i></span>
+                            </p>
+                            <p>
+                                Акции для клиентов
+                                <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                            </p>
+                  
+                        </div>
+                        <!-- latest-riviews end -->
+                      
+                    </div>
+                    <!-- categories-left-sidebar end -->
+                </div>
+					<!--banner -->
+				<div class="col-lg-4 col-md-4 col-sm-4">
+				<div class="single-instagram">
+                            <a href="https://www.tinkoff.ru/mobile-operator/">
+                                <img src="img/mobile_banner.gif" alt="">
+                                <span class="moretag"></span>
+                            </a>
+                        </div>
+				 </div>
+				<!--end banner --->
+            </div>
+        </div>
+    </div>
+    <!-- single-blog-area satart -->
+    
+    <!-- footer start -->
+    <footer class="footer-area">
+      
+        <!-- footer-bottom-area start -->
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12">
+                        <div class="copyright">
+						   <p>Неофициальный информационный сайт, посвященный новому мобильному оператору Тинькофф Мобайл.</p>
+								<p>Если вы заметили неточность, сообщите пожалуйста об этом на почту <a href="mailto:admin@tinkoff-sim.ru">admin@tinkoff-sim.ru<a/></p>
+                            <p><a href="https://Tinkoff-Sim.ru" target="_blank"> Tinkoff-Sim.ru</a> Копирование материала запрещено. Права защищены 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer-bottom-area end -->
+    </footer>
+    <!-- footer end --> 
+        
+     <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(54625069, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/54625069" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+        <!-- JS -->
+        
+        <!-- jquery-1.11.3.min js
+		============================================ -->         
+        <script src="js/vendor/jquery-1.11.3.min.js"></script>
+        
+ 		<!-- bootstrap js
+		============================================ -->         
+        <script src="js/bootstrap.min.js"></script>
+        
+   		<!-- owl.carousel.min js
+		============================================ -->       
+        <script src="js/owl.carousel.min.js"></script>
+
+        <!-- jquery.scrollUp js -->
+        <script src="js/jquery.scrollUp.min.js"></script>
+		
+   		<!-- jquery.meanmenu js
+		============================================ -->       
+        <script src="js/jquery.meanmenu.js"></script>
+
+        <!-- lightbox.min js
+        ============================================ -->
+        <script src="js/lightbox.min.js"></script>
+		
+		<!-- jquery.countdown js
+		============================================ -->
+        <script src="js/countdon.min.js"></script>
+        
+   		<!-- plugins js
+		============================================ -->         
+        <script src="js/plugins.js"></script>
+        
+   		<!-- main js
+		============================================ -->           
+        <script src="js/main.js"></script>
+    </body>
 </html>
